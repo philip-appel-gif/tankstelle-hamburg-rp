@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Tankstelle Hamburg RP</title>
+</head>
+<body>
+
+<h2>🔐 Login</h2>
+<input id="name" placeholder="Name">
+<input id="pw" type="password" placeholder="Passwort">
+<button onclick="login()">Login</button>
+
+<hr>
+
+<h3>👥 Spieler</h3>
+<input id="spielerName" placeholder="Spielername">
+<select id="spielerKarte">
+  <option>Keine</option>
+  <option>Bronze</option>
+  <option>Platin</option>
+</select>
+<button onclick="addSpieler()">Hinzufügen</button>
+<ul id="spielerListe"></ul>
+
+<hr>
+
+<h3>🛒 Produkte</h3>
+<input id="produktName" placeholder="Produkt">
+<input id="produktPreis" type="number" placeholder="Preis">
+<button onclick="addProdukt()">Hinzufügen</button>
+<ul id="produktListe"></ul>
+
+<hr>
+
+<h3>🧾 Rechnung</h3>
+<select id="kunde"></select>
+<select id="produkt"></select>
+<input id="anzahl" type="number" value="1">
+<button onclick="addToCart()">In Warenkorb</button>
+
+<ul id="warenkorb"></ul>
+<p>Endbetrag: <span id="gesamt">0</span> €</p>
+
+<button onclick="rechnung()">Rechnung anzeigen</button>
+<pre id="rechnungText"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>
 
